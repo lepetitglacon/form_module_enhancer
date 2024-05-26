@@ -1,0 +1,14 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+
+  Petitglacon\FormModuleEnhancer\:
+    resource: '../Classes/*'
+    exclude: '../Classes/Domain/Model/*'
+
+  Petitglacon\FormModuleEnhancer\EventListener\FormDefinitionLoadingListener:
+    tags:
+      - name: event.listener
+        identifier: 'FormDefinitionLoadingListener'

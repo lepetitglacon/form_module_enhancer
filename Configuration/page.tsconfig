@@ -1,0 +1,2 @@
+# Override backend templates
+templates.typo3/cms-form.99999999 = petitglacon/form-module-enhancer:Resources/Private

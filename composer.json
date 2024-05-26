@@ -1,0 +1,21 @@
+{
+    "name": "petitglacon/form-module-enhancer",
+    "description": "Enhance ext:form backend module",
+    "type": "typo3-cms-extension",
+    "license": [
+        "GPL-2.0-or-later"
+    ],
+    "require": {
+        "typo3/cms-core": "^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Petitglacon\\FormModuleEnhancer\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "form_module_enhancer"
+        }
+    }
+}

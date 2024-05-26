@@ -1,0 +1,14 @@
+module.tx_form {
+
+    settings {
+        # change the paginator limit
+        limit = 10
+
+        # additional fields to search
+        additionalSearchFields =
+
+        # display search informations
+        displayFlashInfo = 0
+    }
+
+}
