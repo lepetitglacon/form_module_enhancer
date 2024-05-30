@@ -40,7 +40,13 @@ class FormManagerController extends BaseFormManagerController
         } else {
             foreach ($this->getAvailableFormDefinitions() as $formDefinition) {
                 foreach ($this->searchFields as $searchField) {
-                    if (is_string($formDefinition[$searchField]) && str_contains($formDefinition[$searchField], $this->searchKey)) {
+                    if (
+                        is_string($formDefinition[$searchField])
+                        && str_contains(
+                            strtolower($formDefinition[$searchField]),
+                            strtolower($this->searchKey)
+                        )
+                    ) {
                         $forms[$formDefinition['identifier']] = $formDefinition;
                     }
                 }
