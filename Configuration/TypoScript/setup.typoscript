@@ -2,7 +2,7 @@ module.tx_form {
 
     settings {
         # change the paginator limit
-        limit = 10
+        limit = 20
 
         # additional fields to search
         additionalSearchFields =
